@@ -12,18 +12,19 @@ public class Main_Menu : MonoBehaviour
     public Image FadeUI;
 
     public GameObject Buttons;
+    public GameObject fade;
 
     public void Awake()
     {
-        FadeUI.CrossFadeAlpha(0, 0, true);
+        //FadeUI.CrossFadeAlpha(0, 0, true);
     }
     // Start is called before the first frame update
     public void Play()
     {
         FadeUI.CrossFadeAlpha(1, 1, true);
-        Buttons.SetActive(false);
-        StartCoroutine(ChangeScene());   
-        
+        //Buttons.SetActive(false);
+        StartCoroutine(ChangeScene());
+
     }
 
     // Update is called once per frame
@@ -37,5 +38,10 @@ public class Main_Menu : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
         SceneManager.LoadSceneAsync(SceneName);
+    }
+
+    public void FadeOut()
+    {
+        fade.GetComponent<Animator>().Play("Fade"); 
     }
 }
