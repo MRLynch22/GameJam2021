@@ -668,8 +668,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Shop
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 894b962494ffb5e48a8cc83a3e2c9caa, type: 2}
+  m_sharedMaterial: {fileID: -2752418706925000217, guid: 894b962494ffb5e48a8cc83a3e2c9caa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1864,8 +1864,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 894b962494ffb5e48a8cc83a3e2c9caa, type: 2}
+  m_sharedMaterial: {fileID: -2752418706925000217, guid: 894b962494ffb5e48a8cc83a3e2c9caa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2214,7 +2214,7 @@ GameObject:
   m_Component:
   - component: {fileID: 720364962}
   m_Layer: 0
-  m_Name: TMPro - Holder
+  m_Name: TitleTexts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2335,8 +2335,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Santa's
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 894b962494ffb5e48a8cc83a3e2c9caa, type: 2}
+  m_sharedMaterial: {fileID: -2752418706925000217, guid: 894b962494ffb5e48a8cc83a3e2c9caa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2821,8 +2821,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: WORK
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 894b962494ffb5e48a8cc83a3e2c9caa, type: 2}
+  m_sharedMaterial: {fileID: -2752418706925000217, guid: 894b962494ffb5e48a8cc83a3e2c9caa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4001,8 +4001,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Quit
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 894b962494ffb5e48a8cc83a3e2c9caa, type: 2}
+  m_sharedMaterial: {fileID: -2752418706925000217, guid: 894b962494ffb5e48a8cc83a3e2c9caa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4464,8 +4464,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Options
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 894b962494ffb5e48a8cc83a3e2c9caa, type: 2}
+  m_sharedMaterial: {fileID: -2752418706925000217, guid: 894b962494ffb5e48a8cc83a3e2c9caa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4489,7 +4489,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.35
+  m_fontSize: 28
   m_fontSizeBase: 29.58
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4673,8 +4673,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Play
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 894b962494ffb5e48a8cc83a3e2c9caa, type: 2}
+  m_sharedMaterial: {fileID: -2752418706925000217, guid: 894b962494ffb5e48a8cc83a3e2c9caa, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
