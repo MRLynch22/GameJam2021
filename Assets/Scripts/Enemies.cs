@@ -5,20 +5,37 @@ using UnityEngine.AI;
 
 public class Enemies : MonoBehaviour
 {
+    public float health = 50f;
+
+    //Reference of AI movement
     public Transform Player;
     public float MoveSpeed = 4;
     public float MaxDist = 10;
-    public float MinDist = 5;
+    public float MinDist = 1;
+
+    //AI attacking player
+    public float attackInterval;
+    private float _attackIntervalTimer;
+
+    public int damage;
+
+    //Reference to Nav-mesh for movement
+    public NavMeshAgent _agent;
+    public GameObject player;
+
+    //Reference to player as target
+    public Transform playerTarget;
 
     // Start is called before the first frame update
     void Start()
     {
-        NavMeshAgent agent = GetComponent<NavMeshAgent>();
+        _agent = GetComponent<NavMeshAgent>();
     }
 
     // Update is called once per frame
     void Update()
     {
+       player = GameObject.Find("Player");
        transform.LookAt(Player);
 
         if (Vector3.Distance(transform.position, Player.position) >= MinDist)
@@ -30,6 +47,20 @@ public class Enemies : MonoBehaviour
             }
         }
 
+    }
+
+    public void TakeDamage(float amount)
+    {
+        health -= amount;
+        if (health <= 0f)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        Destroy(gameObject);
     }
 }
 
