@@ -19,21 +19,21 @@ public class Bullets : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit, 100))
+        {
+            transform.LookAt(hit.point);
+            Debug.Log(hit.transform.name);
+            Debug.Log("hit");
+        }
 
-        
+
 
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
 
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit, 100))
-            {
-                transform.LookAt(hit.point);
-                Debug.Log(hit.transform.name);
-                Debug.Log("hit");
-            }
+            
 
             Debug.Log("Pew Pew");
             GameObject _bullet = Instantiate(carrotBulletPrefab, bulletPoint.position, Quaternion.identity);
