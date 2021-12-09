@@ -143,6 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carrotBulletPrefab: {fileID: 4635413347062302598, guid: d1e7706556034b14db24a2a6407ca35c, type: 3}
   bulletPoint: {fileID: 910119327417515349}
+  force: 30
 --- !u!1 &6788584795834325058
 GameObject:
   m_ObjectHideFlags: 0
