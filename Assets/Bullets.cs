@@ -7,7 +7,9 @@ public class Bullets : MonoBehaviour
 
     public GameObject carrotBulletPrefab;
 
-    public Transform bulletPoint; 
+    public Transform bulletPoint;
+
+    public float force; 
 
 
     // Start is called before the first frame update
@@ -37,7 +39,7 @@ public class Bullets : MonoBehaviour
 
             Debug.Log("Pew Pew");
             GameObject _bullet = Instantiate(carrotBulletPrefab, bulletPoint.position, Quaternion.identity);
-            _bullet.GetComponent<Rigidbody>().AddForce(Vector3.forward * 10f, ForceMode.Impulse); 
+            _bullet.GetComponent<Rigidbody>().AddForce(bulletPoint.transform.forward * force, ForceMode.Impulse); 
         }
 
         
