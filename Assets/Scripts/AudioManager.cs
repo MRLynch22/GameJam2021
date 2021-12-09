@@ -4,23 +4,29 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    private AudioClip backgroundMusic;
-    private AudioClip mainMenuMusic;
+    [Header("Music")]
+    public AudioClip backgroundMusic;
+    public AudioClip mainMenuMusic;
 
-    private AudioClip pauseMenu;
+    [Header("Menus")]
+    public AudioClip pauseMenu;
     public AudioClip gameOver;
 
-    private AudioClip roundStarted;
-    private AudioClip roundWon;
+    [Header("Rounds")]
+    public AudioClip roundStarted;
+    public AudioClip roundWon;
 
-    private AudioClip enemyDies;
-    private AudioClip enemyHit;
-    private AudioClip playerHit;
+    [Header("Enemies")]
+    public AudioClip enemyDies;
+    public AudioClip enemyHit;
+    public AudioClip playerHit;
 
-    private AudioClip[] santaLines;
+    [Header("PlayerLines")]
+    public AudioClip[] santaLines;
 
-    private AudioClip[] coalGrenade;
-    private AudioClip dash;
-    private AudioClip shootCarrots;
+    [Header("Weapons")]
+    public AudioClip coalGrenade;
+    public AudioClip dash;
+    public AudioClip shootCarrots;
 
 }
