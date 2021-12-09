@@ -27,7 +27,9 @@ public class WaveManager : MonoBehaviour
     public int waveNumber;
 
     //; Bool for wave delay 
-    public bool nextWave; 
+    public bool nextWave;
+
+    private bool _completed; 
 
     // Start is called before the first frame update
     void Awake()
@@ -39,31 +41,39 @@ public class WaveManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(nextWave)
+        if(!_completed)
         {
-            if(_waveTimer <= 0.1f)
+            if (nextWave)
             {
-                TriggerNextWave();
+                if (_waveTimer <= 0.1f)
+                {
+                    TriggerNextWave();
+                }
+                else
+                {
+                    _waveTimer -= Time.deltaTime;
+                }
+            }
+            if (_spawnTimer <= 0.1f)
+            {
+                SpawnEnemy();
             }
             else
             {
-                _waveTimer -= Time.deltaTime; 
+                _spawnTimer -= Time.deltaTime;
             }
         }
-        if(_spawnTimer <= 0.1f)
-        {
-            SpawnEnemy(); 
-        }
-        else
-        {
-            _spawnTimer -= Time.deltaTime; 
-        }
+        
     }
 
     public void SpawnEnemy()
     {
-        if(enemyAmount[waveNumber] > 1)
+        if(enemyAmount[waveNumber] > 0)
         {
+            //ADD INSTANTIATE CODE HERE 
+
+
+
             Debug.Log("Spawn Enemy");
             _spawnTimer = spawnDelay;
             enemyAmount[waveNumber] -= 1;
@@ -78,7 +88,21 @@ public class WaveManager : MonoBehaviour
     }
     public void TriggerNextWave()
     {
-        Debug.Log("Next Wave!!");
-        waveNumber += 1; 
+        if(waveNumber == enemyAmount.Length -1)
+        {
+            Debug.Log("No More Waves!");
+            _completed = true;
+        }
+        else
+        {
+            Debug.Log("Next Wave!!");
+            waveNumber += 1;
+            
+        }
+        nextWave = false;
+
+
+
+
     }
 }
